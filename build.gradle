@@ -20,7 +20,11 @@ allprojects {
     repositories {
         google()
         jcenter()
-        
+
+        // This block of code 👇🏼👇🏼👇🏼 adds the Esri public Bintray Maven repository
+        maven {
+            url 'https://esri.bintray.com/arcgis'
+        }
     }
 }
 
